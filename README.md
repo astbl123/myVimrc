@@ -2,7 +2,7 @@
 best vim for linux source code view
 
 
-所拥有功能如下：
+所拥有功能如下：<br/>
 1.a.vim ：用F12自动切换.c和.h文件。<br/>
 2.taglist.vim ： 开启vim后会在窗口右边显示函数，变量等定义，利用ctrl+w键切换光标区域。<br/>
 3.vim-powerline ：显示多彩的状态栏。<br/>
