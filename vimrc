@@ -11,9 +11,9 @@ Plugin 'vim-scripts/SuperTab--Van-Dewoestine'
 Plugin 'vim-scripts/a.vim'
 Plugin 'vim-scripts/pathogen.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'Lokaltog/vim-powerline'
-Plugin 'DoxygenToolkit.vim'
+Plugin 'vim-scripts/DoxygenToolkit.vim'
 
 
 call vundle#end()
@@ -199,3 +199,12 @@ set laststatus=2
 "let g:Powerline_colorscheme = 'solarized256'
 "let g:Powerline_theme = 'solarized256'
 set t_Co=256
+
+"""""""""Doxygen""""""""""""""""""""""""""""""""
+let g:DoxygenToolkit_briefTag_pre="@Synopsis  "
+let g:DoxygenToolkit_paramTag_pre="@Param "
+let g:DoxygenToolkit_returnTag="@Returns   "
+let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
+let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
+let g:DoxygenToolkit_authorName="Mathias Lorente"
+let g:DoxygenToolkit_licenseTag="My own license"   <-- !!! Does not end with "\<enter>"
