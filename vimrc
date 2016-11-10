@@ -96,19 +96,6 @@ nmap <C-_>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
  
 set cscopequickfix=s-,c-,d-,i-,t-,e- 
-if has("cscope") 
-set csprg=/usr/bin/cscope 
-set csto=1 
-set cst 
-set nocsverb 
-" add any database in current directory   
-if filereadable("cscope.out") 
-cs add cscope.out 
-endif 
-set csverb 
-endif  
-
-
 "自动加载cscope
 if has("cscope")  
 set csprg=/usr/bin/cscope  
@@ -207,4 +194,4 @@ let g:DoxygenToolkit_returnTag="@Returns   "
 let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
 let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
 let g:DoxygenToolkit_authorName="Mathias Lorente"
-let g:DoxygenToolkit_licenseTag="My own license"   <-- !!! Does not end with "\<enter>"
+"let g:DoxygenToolkit_licenseTag="My own license"   <-- !!! Does not end with "\<enter>"
