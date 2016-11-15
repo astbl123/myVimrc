@@ -197,3 +197,7 @@ let g:DoxygenToolkit_blockHeader="----------------------------------------------
 let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
 let g:DoxygenToolkit_authorName="Mathias Lorente"
 "let g:DoxygenToolkit_licenseTag="My own license"   <-- !!! Does not end with "\<enter>"
+
+"language support 中文显示支持:utf-8,gbk
+let &termencoding=&encoding
+set fileencodings=utf-8,gbk,ucs-bom,cp936
