@@ -3,15 +3,15 @@ best vim for linux source code view
 
 前期准备：
 1.下载bundle插件管理器：git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle<br/>
-2.安装cscpoe: sudo apt-get install cscope
-3.安装ctags:sudo apt-get install ctags
+2.安装cscpoe: sudo apt-get install cscope <br/>
+3.安装ctags:sudo apt-get install ctags <br/>
 
 所拥有功能如下：<br/>
 1.a.vim ：用F12自动切换.c和.h文件。<br/>
 2.taglist.vim ： 开启vim后会在窗口右边显示函数，变量等定义，利用ctrl+w键切换光标区域。<br/>
 3.vim-powerline ：显示多彩的状态栏。<br/>
 4.winmanager ：可以使用F5键开启文件管理界面（窗口左边显示），上下箭头移动光标，回车键开启文件/文件夹。<br/>
-5.ctags ：这个插件需要自己安装，配置表里面增加了对该插件的支持，在变量或者函数的地方摁下“ctrl+]”键，vim就可以自由跳转到函数/变量定义的地方。<br/>
+5.ctags ：使用前输入'ctags -R'用来建立索引库，这个插件需要自己安装，配置表里面增加了对该插件的支持，在变量或者函数的地方摁下“ctrl+]”键，vim就可以自由跳转到函数/变量定义的地方。<br/>
 6,cscope ：该插件要自己安装，建立cscope使用的索引文件在你需要浏览源码的根目录下（如你想用cscope看linux源码)使用下面命令: cscope -Rbkq<回车>,配置表里增加了快捷键，在变量/函数的地方摁下“ctrl+shift+-”，然后再摁下“c/g/s”等按键就能对该变量/函数进行搜索。<br/>
 7.grep ： 把光标定位到要搜索的文字上面，摁下F3开启搜索功能,然后在命令栏里会自动填上搜索的内容，摁两次回车即可搜索当前目录所有文件是否包含该关键词<br/>
 8.SuperTab--Van-Dewoestine: 快速补全功能， 只需要在光标的地方摁下“tab”键，就会补全后面的部分。<br/>
