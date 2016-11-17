@@ -18,3 +18,4 @@ best vim for linux source code view
 9.syntastic ： 代码错误检查，在浏览内核代码的时候会显示很多错误信息，所以暂时屏蔽了该功能。<br/>
 10.vundle : 插件管理器。只需要在vimrc文件里面填入`Plugin 'vim-scripts/taglist.vim'`类似这个格式的安装信息，然后打开vim，在命令模式输入”PluginInstall“就能安装插件。<br/>
 11.DoxygenToolkit.vim ： 该插件是方便快捷地用doxygen的格式注释代码。"DoxLic"添加许可，"DoxAuthor"添加作者，"Dox"函数或类的注释,"DoxUndoc"忽略注释里面的代码<br/>
+12.echofunc:可以在命令行中提示当前输入函数的原型。这个插件需要tags文件的支持, 并且在创建tags文件的时候要加选项"--fields=+lS"（OmniCppComplete创建的tag文件也能用）, 整个创建tags文件的命令如下:`ctags -R --fields=+lS`,当 你在vim插入(insert)模式下紧接着函数名后输入一个"("的时候, 这个函数的声明就会自动显示在命令行中。如果这个函数有多个声明, 则可以通过按键"Alt+-"和"Alt+="向前和向后翻页, 这个两个键可以通过设置g:EchoFuncKeyNext和g:EchoFuncKeyPrev参数来修改。

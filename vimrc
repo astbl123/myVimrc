@@ -14,7 +14,7 @@ Plugin 'scrooloose/nerdtree'
 "Plugin 'scrooloose/syntastic'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
-
+Plugin 'vim-plugins/echofunc'
 
 call vundle#end()
 filetype plugin indent on
@@ -190,12 +190,12 @@ set laststatus=2
 set t_Co=256
 
 """""""""Doxygen""""""""""""""""""""""""""""""""
-let g:DoxygenToolkit_briefTag_pre="@Synopsis  "
+let g:DoxygenToolkit_briefTag_pre="@Brief  "
 let g:DoxygenToolkit_paramTag_pre="@Param "
 let g:DoxygenToolkit_returnTag="@Returns   "
 let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
 let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
-let g:DoxygenToolkit_authorName="Mathias Lorente"
+let g:DoxygenToolkit_authorName="BoLong Tan"
 "let g:DoxygenToolkit_licenseTag="My own license"   <-- !!! Does not end with "\<enter>"
 
 "language support 中文显示支持:utf-8,gbk
