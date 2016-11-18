@@ -48,6 +48,11 @@ set noexpandtab
 "switch case 对齐风格
 set cino=g0,:0
 
+"鼠标支持
+if has('mouse')
+  set mouse=a
+  endif
+
 
 """""""""""""""""Taglist设置""""""""""""""""" 
 let Tlist_Show_One_File=1    "只显示当前文件的tags
@@ -201,3 +206,29 @@ let g:DoxygenToolkit_authorName="BoLong Tan"
 "language support 中文显示支持:utf-8,gbk
 let &termencoding=&encoding
 set fileencodings=utf-8,gbk,ucs-bom,cp936
+
+"搜索不分大小写
+set ic
+"
+"标识关键字
+set hls
+
+"5编译和运行C程序，F6编译和运行C++程序
+" 请注意，下述代码在windows下使用会报错
+" 需要去掉./这两个字符
+
+" C的编译和运行
+map <F5> :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+  exec "w"
+  exec "!gcc -Wall -g % -o %<"
+  exec "! ./%<"
+endfunc
+
+" C++的编译和运行
+map <F6> :call CompileRunGpp()<CR>
+func! CompileRunGpp()
+  exec "w"
+  exec "!g++ -Wall -g % -o %<"
+  exec "! ./%<"
+endfunc
