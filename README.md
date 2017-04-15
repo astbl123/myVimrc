@@ -5,6 +5,7 @@ best vim for linux source code view
 1.下载bundle插件管理器：`git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`<br/>
 2.安装cscpoe: `sudo apt-get install cscope` <br/>
 3.安装ctags:`sudo apt-get install ctags` <br/>
+4.安装vim插件：打开vim，在命令模式输入”PluginInstall“就能安装插件。 <br/>
 
 所拥有功能如下：<br/>
 1.a.vim ：用F12自动切换.c和.h文件。<br/>
