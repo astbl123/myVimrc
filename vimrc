@@ -42,8 +42,9 @@ set shiftwidth=4
 
 "建议开启expandtab选项，
 "会自动将tab扩展很空格，代码缩进会更美观
+set ts=4
 set expandtab
-set noexpandtab
+%retab!
 
 "switch case 对齐风格
 set cino=g0,:0
